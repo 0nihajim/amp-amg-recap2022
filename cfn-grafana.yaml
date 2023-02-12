@@ -141,3 +141,7 @@ Resources:
      Subscription:
        - Endpoint: !Ref EmailAddress
          Protocol: email
+         
+Outputs:
+  WorkspaceId:
+    Value: !Ref AmazonGrafanaWorkspace
