@@ -23,13 +23,13 @@ Resources:
         Statement:
           - Effect: Allow
             Action:
-              - 'es:ESHttpGet'
-              - 'es:DescribeElasticsearchDomains'
-              - 'es:ListDomainNames'
+              - "es:ESHttpGet"
+              - "es:DescribeElasticsearchDomains"
+              - "es:ListDomainNames"
             Resource: '*'
           - Effect: Allow
             Action:
-              - 'es:ESHttpPost'
+              - "es:ESHttpPost"
             Resource: 
               - 'arn:aws:es:*:*:domain/*/_msearch*'
               - 'arn:aws:es:*:*:domain/*/_opendistro/_ppl'
