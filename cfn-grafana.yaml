@@ -6,7 +6,6 @@ Parameters:
       (Required) Name for each resources lowercase prefix.
     Type: String
     Default: amp-amg-recap2022
-  
   EmailAddress:
     Description: |
       (Required) Email address for SNS subscription.
