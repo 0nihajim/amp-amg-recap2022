@@ -35,7 +35,7 @@ locals {
 
 # deploys the base module
 module "eks_observability_accelerator" {
-  source = "github.com/aws-observability/terrarom-aws-observability-accelerator?ref=v1.6.2"
+  source = "github.com/aws-observability/terraform-aws-observability-accelerator?ref=v1.6.2"
 
   aws_region     = var.aws_region
   eks_cluster_id = var.eks_cluster_id
@@ -74,7 +74,7 @@ provider "grafana" {
 }
 
 module "workloads_infra" {
-  source = "github.com/aws-observability/terrarom-aws-observability-accelerator/modules/workloads/infra?ref=v1.6.2"
+  source = "github.com/aws-observability/terraform-aws-observability-accelerator/modules/workloads/infra?ref=v1.6.2"
 
   eks_cluster_id = module.eks_observability_accelerator.eks_cluster_id
 
